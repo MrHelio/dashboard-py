@@ -5,7 +5,7 @@ import seaborn as sns
 
 st.set_page_config(page_title='Dashboard Py', layout='wide')
 st.title('Análise de Taxas de Aprovação')
-st.write("Temos um dashboard interativo que vai mostrar as taxas de aprovações e índice de do IDEB (Índice de Desenvolvimento da Educação Básica) no Brasil.")
+st.write("Temos um dashboard interativo que vai mostrar as taxas de aprovações do IDEB (Índice de Desenvolvimento da Educação Básica) no Piauí.")
 
 df = pd.read_excel('/home/helio/Projects/dashboard-py/src/divulgacao_brasil_ideb_2023-1.xlsx')
 df = df.drop('Rede', axis=1)
